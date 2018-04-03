@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.Map;
 
 public class StringOccurance {
 
@@ -7,14 +8,22 @@ public class StringOccurance {
 		HashMap<Character, Integer> map = new HashMap<>();
 		for (char ch : str.toCharArray()) {
 			if (map.containsKey(ch)) {
+				//map.remove(ch);
 				int val = map.get(ch);
-				System.out.println(val);
 				map.put(ch, val + 1);
 			} else {
 				map.put(ch, 1);
 			}
 		}
 		System.out.println(map);
+		for (Map.Entry<Character,Integer> entry : map.entrySet()) 
+		{
+			if (entry.getValue()==1) {
+				System.out.println(entry.getKey());
+			}
+            
+		}
+		
 	}
 		
 }		
