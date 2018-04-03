@@ -8,6 +8,7 @@ public class StringOccurance {
 		for (char ch : str.toCharArray()) {
 			if (map.containsKey(ch)) {
 				int val = map.get(ch);
+				System.out.println(val);
 				map.put(ch, val + 1);
 			} else {
 				map.put(ch, 1);
