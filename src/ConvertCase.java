@@ -3,7 +3,7 @@ public class ConvertCase {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String alphabet = "ViNOdS";
+		String alphabet = "ViNOdSV";
 		StringBuilder sb = new StringBuilder(alphabet);
 		for (int index = 0; index < sb.length(); index++) {
 			char c = sb.charAt(index);

@@ -4,7 +4,6 @@ public class Reverse {
 
 	public static void main(String[] args) {
 		 String name = "vinod";
-		 String test="";
 		 char[] change = name.toCharArray();
 		 int left, right=0;
 	        right = change.length-1;
